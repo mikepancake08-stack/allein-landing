@@ -2,6 +2,7 @@
  * ALLEIN Home Page — Dark Forge / Industrial Luxury
  * Design: Playfair Display headlines, DM Sans body, black bg, gold (#D4AF37) accents
  * Layout: Asymmetric hero, staggered feature cards, cinematic about section
+ * Updated with real app screenshots
  */
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,8 +20,8 @@ import {
   BarChart3,
 } from "lucide-react";
 
-const HERO_PHONE =
-  "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-1_1771989645000_na1fn_aGVyby1waG9uZS1tb2NrdXA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTFfMTc3MTk4OTY0NTAwMF9uYTFmbl9hR1Z5Ynkxd2FHOXVaUzF0YjJOcmRYQS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=DVnOIUKO1oiC~zjYdELdw5cHGiRCqF7CCBeOjROLhZBhLZ7y3oKsenfGTzOeqvG7h2bUu7r0YZWpWuKEnvaUg8B28cAwzjCr04--mVfJHo73pNRhmI7QwtOlPCqFMS~O~Bpd6U0lD81QtQBP6EcBeJ0w3FWBiLoLDCNL8eT5dG5LxntZ4wT-OYiEhPCjfGBJbz9EF9Xt93~mRZeHpCybj3rn9LTLt4pCP4i8oYUFM7ISH9x-qxTCzu0EjOQc6NdR6N-kekD15cImWqxve00aGMdYuoLryxTElFXiMF-HfkT90bBnOrGs1fu8SR2DFOuaGGe3NqwGRtNinAIeTAZMqQ__";
+/* ── Real app screenshot URLs ── */
+const HERO_PHONE = "/screenshots/hero_phone_mockup.png";
 
 const HERO_BG =
   "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-2_1771989634000_na1fn_aGVyby1iZy10ZXh0dXJl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTJfMTc3MTk4OTYzNDAwMF9uYTFmbl9hR1Z5YnkxaVp5MTBaWGgwZFhKbC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=AAFnZXQLWcAZueZkZerps5-4ug9ks9VjDMtQPXmC6uN9OKcwZw5khd-uoTkqT3g8MCsr5DaAdSRkOJu~SWHJQd-mCWvz~sHvUb8Tv-y5RIieAP4K8qQHRdEZPhODsqUnHfeOANo2iExx3eEciwxkjy8p~7eeiq6D~yMxA5quw1Pb19HEfyOJw23gDcaI~0SfU~cCylhdKu8FZLW6wDBGRvO~8L2L-YmwzWwxYoj9mk~dvcQ5BtfZ6ZQSFKS0hJIlbv8l-J76pKBi3yfpomGFI53s1ytnwySZkEUOCDhnm83fc7neZuE-CmvtsTFSatXh4Fs~nDRvcOmenZ4dzgkCVQ__";
@@ -28,11 +29,18 @@ const HERO_BG =
 const ABOUT_IMG =
   "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-3_1771989636000_na1fn_YWJvdXQtdHJhaW5lcg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTNfMTc3MTk4OTYzNjAwMF9uYTFmbl9ZV0p2ZFhRdGRISmhhVzVsY2cucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Z~7OUE6NHUvb7qlsmuZmi2LJplBkCZ6AbSs4krTRYRQyCujP~gLkLGCy3XbSanAJQR3an2Gf6l-ezEQp-7Ypsla8TbUZhKVTzdq0NuI7IAsQXuP7ofgxuUNChrKMTpa3uAWhpK4pn2XMnaJ7SDyTM3L7ybh4p9I6JAbJ097QsjkaFRFfO3rs9Sgy8efcmgGW7n0lao5WawIbK6gbOnvbcLX7hDe21067Cv5BY7~bzyAhTJFCZDzZ5bzb-PSrHMfarPyB~-LAKy8Zqoq1Bz4vlcXeblUYa4Iv3FrHgIAP61PESNvHoTF8J6sN3kkP33Dalb0tT8hgOZGj3Gn81Kdizw__";
 
-const FEATURES_AI =
-  "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-4_1771989649000_na1fn_ZmVhdHVyZXMtYWk.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTRfMTc3MTk4OTY0OTAwMF9uYTFmbl9abVZoZEhWeVpYTXRZV2sucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=tZn37PSHKcumG2yLqzWcIZZG2xTuaGsnR4s6vuK01N2ul8Xm4KB1-L3QjZA771~uWAQSKlBPwhY-~fmsLMoBy11aJ94WWCXoEZ8haDdnGNeaIGnGy9VIQuWobFpj2tTT0k~jHu49-t1Z6vyAuLILXJpo9xoDiFUHOgtj4I57xBXmirCtTqiPWjSmRI2v5OyPsx7LjpHEIqnwXj-COGh8T9xvtFyg-xD0N85cs34sxZfpl1z678jfMXKJwcgfQjk-qkn7JAJzozqkUGSJE9tF1H1jPoOoqLwSbO8hZnp9bsOCAtV-Q3fQff67bEXTVrmfX5v8BgpeAIcPDNJhwNJr2A__";
+const FEATURES_NUTRITION = "/screenshots/features_nutrition.png";
+const FEATURES_WORKOUT = "/screenshots/features_workout.png";
 
-const FEATURES_WORKOUT =
-  "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-5_1771989630000_na1fn_ZmVhdHVyZXMtd29ya291dA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTVfMTc3MTk4OTYzMDAwMF9uYTFmbl9abVZoZEhWeVpYTXRkMjl5YTI5MWRBLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=OUuc4X~j1AtdHa2P84UBrZByjAs1fZVvSEe-CtDEqTx8DcYykw0L1oVSm6x1GNwdHno-RSntxkGICplwQH~RXGl1YutILIILFM2-EMVxfS-2tqCi8jM0tCfjPQCK6SXenbbk2YesmWioiKFsZpFH6sxjV8V~AyJp0Dsd6rOScNsL6NKEhDDUpjxxcMkSD7tcpBvqpEVI0beXG9oQiWM6yYrG7qQK3ucgVzHvpUZ75v6eziq9sT-TlmQxXkkBdAZVKtf4jm7cMZvnEYCVl4shrittclD~YMttRdKOt7sS1Sq2wlpuijRYy~4iKaCXc-tntWYGpU1WZLCOZgDHhbq4Mw__";
+/* ── App preview screenshots for carousel ── */
+const APP_PREVIEWS = [
+  { src: "/screenshots/home_screen.jpg", label: "Dashboard", description: "Your week at a glance with workouts and macro tracking" },
+  { src: "/screenshots/nutrition_screen.jpg", label: "Nutrition", description: "AI-powered calorie and macro tracking" },
+  { src: "/screenshots/workouts_screen.jpg", label: "Workouts", description: "Programs, community workouts, and AI builder" },
+  { src: "/screenshots/lifestyle_screen.jpg", label: "Lifestyle", description: "Daily habits, streaks, and progress tracking" },
+  { src: "/screenshots/workout_detail_screen.jpg", label: "Active Workout", description: "Video guides with set and rep logging" },
+  { src: "/screenshots/log_food_screen.jpg", label: "Log Food", description: "Photo, barcode, text, and menu scanning" },
+];
 
 const features = [
   {
@@ -231,13 +239,12 @@ export default function Home() {
           {/* AI Food Logging Showcase */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-32">
             <ScrollReveal direction="left">
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative rounded-2xl overflow-hidden p-4 bg-gradient-to-br from-[#D4AF37]/5 via-transparent to-transparent">
                 <img
-                  src={FEATURES_AI}
-                  alt="AI-powered food logging"
-                  className="w-full h-auto rounded-lg"
+                  src={FEATURES_NUTRITION}
+                  alt="ALLEIN Nutrition tracking and AI food logging"
+                  className="w-full h-auto rounded-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
             </ScrollReveal>
             <ScrollReveal direction="right" delay={200}>
@@ -292,15 +299,69 @@ export default function Home() {
               </div>
             </ScrollReveal>
             <ScrollReveal direction="right" className="order-1 lg:order-2">
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative rounded-2xl overflow-hidden p-4 bg-gradient-to-bl from-[#D4AF37]/5 via-transparent to-transparent">
                 <img
                   src={FEATURES_WORKOUT}
-                  alt="Workout tracking with progressive overload"
-                  className="w-full h-auto rounded-lg"
+                  alt="ALLEIN workout tracking with video guides"
+                  className="w-full h-auto rounded-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
             </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════ APP PREVIEW ═══════════════════════ */}
+      <section id="preview" className="relative py-24 lg:py-32 overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-16 lg:mb-20">
+              <span className="text-xs font-semibold text-[#D4AF37] tracking-[0.3em] uppercase">
+                See It In Action
+              </span>
+              <h2 className="font-[var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6">
+                Designed for{" "}
+                <span className="text-gold-gradient">Results</span>
+              </h2>
+              <p className="text-[#888] text-lg max-w-2xl mx-auto">
+                Every screen is crafted with purpose — beautiful, intuitive, and built
+                to help you achieve your fitness goals faster.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          {/* Horizontal scrolling preview */}
+          <div className="relative">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+
+            <div className="flex gap-6 overflow-x-auto pb-8 px-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              {APP_PREVIEWS.map((preview, i) => (
+                <ScrollReveal key={preview.label} delay={i * 100} direction="up">
+                  <div className="flex-shrink-0 w-[220px] sm:w-[260px] group">
+                    <div className="relative rounded-2xl overflow-hidden border border-[#1A1A1A] group-hover:border-[#D4AF37]/30 transition-all duration-500 bg-[#0A0A0A]">
+                      {/* Phone frame styling */}
+                      <div className="relative overflow-hidden rounded-2xl">
+                        <img
+                          src={preview.src}
+                          alt={`ALLEIN ${preview.label} screen`}
+                          className="w-full h-auto"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      </div>
+                    </div>
+                    <div className="mt-4 text-center">
+                      <h4 className="text-sm font-semibold text-white font-[var(--font-display)]">{preview.label}</h4>
+                      <p className="text-xs text-[#666] mt-1 leading-relaxed">{preview.description}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -465,6 +526,9 @@ export default function Home() {
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-12px); }
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
       `}</style>
     </div>
