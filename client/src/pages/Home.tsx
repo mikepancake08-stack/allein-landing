@@ -26,8 +26,7 @@ const HERO_PHONE = "/screenshots/hero_phone_mockup.png";
 const HERO_BG =
   "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-2_1771989634000_na1fn_aGVyby1iZy10ZXh0dXJl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTJfMTc3MTk4OTYzNDAwMF9uYTFmbl9hR1Z5YnkxaVp5MTBaWGgwZFhKbC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=AAFnZXQLWcAZueZkZerps5-4ug9ks9VjDMtQPXmC6uN9OKcwZw5khd-uoTkqT3g8MCsr5DaAdSRkOJu~SWHJQd-mCWvz~sHvUb8Tv-y5RIieAP4K8qQHRdEZPhODsqUnHfeOANo2iExx3eEciwxkjy8p~7eeiq6D~yMxA5quw1Pb19HEfyOJw23gDcaI~0SfU~cCylhdKu8FZLW6wDBGRvO~8L2L-YmwzWwxYoj9mk~dvcQ5BtfZ6ZQSFKS0hJIlbv8l-J76pKBi3yfpomGFI53s1ytnwySZkEUOCDhnm83fc7neZuE-CmvtsTFSatXh4Fs~nDRvcOmenZ4dzgkCVQ__";
 
-const ABOUT_IMG =
-  "https://private-us-east-1.manuscdn.com/sessionFile/uMnqnvJI78uiszF7KOW311/sandbox/PnTEwDjnxVpRTazgEKJI7K-img-3_1771989636000_na1fn_YWJvdXQtdHJhaW5lcg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdU1ucW52Skk3OHVpc3pGN0tPVzMxMS9zYW5kYm94L1BuVEV3RGpueFZwUlRhemdFS0pJN0staW1nLTNfMTc3MTk4OTYzNjAwMF9uYTFmbl9ZV0p2ZFhRdGRISmhhVzVsY2cucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Z~7OUE6NHUvb7qlsmuZmi2LJplBkCZ6AbSs4krTRYRQyCujP~gLkLGCy3XbSanAJQR3an2Gf6l-ezEQp-7Ypsla8TbUZhKVTzdq0NuI7IAsQXuP7ofgxuUNChrKMTpa3uAWhpK4pn2XMnaJ7SDyTM3L7ybh4p9I6JAbJ097QsjkaFRFfO3rs9Sgy8efcmgGW7n0lao5WawIbK6gbOnvbcLX7hDe21067Cv5BY7~bzyAhTJFCZDzZ5bzb-PSrHMfarPyB~-LAKy8Zqoq1Bz4vlcXeblUYa4Iv3FrHgIAP61PESNvHoTF8J6sN3kkP33Dalb0tT8hgOZGj3Gn81Kdizw__";
+const ABOUT_IMG = "/screenshots/michael_trainer.jpg";
 
 const FEATURES_NUTRITION = "/screenshots/features_nutrition.png";
 const FEATURES_WORKOUT = "/screenshots/features_workout.png";
@@ -421,14 +420,20 @@ export default function Home() {
             {/* Image */}
             <ScrollReveal direction="left">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#D4AF37]/10 via-transparent to-transparent rounded-lg blur-2xl" />
-                <div className="relative rounded-lg overflow-hidden border border-[#D4AF37]/10">
+                {/* Outer gold glow */}
+                <div className="absolute -inset-6 bg-gradient-to-br from-[#D4AF37]/15 via-[#D4AF37]/5 to-transparent rounded-2xl blur-3xl" />
+                {/* Inner container */}
+                <div className="relative rounded-xl overflow-hidden border border-[#D4AF37]/20 bg-black shadow-2xl shadow-[#D4AF37]/5">
                   <img
                     src={ABOUT_IMG}
-                    alt="Personal trainer in premium gym"
-                    className="w-full h-auto"
+                    alt="Michael — certified personal trainer and ALLEIN founder"
+                    className="w-full h-auto object-cover"
+                    style={{ maxHeight: '600px', objectPosition: 'center top' }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                  {/* Subtle bottom fade into black */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  {/* Subtle gold rim light effect */}
+                  <div className="absolute inset-0 ring-1 ring-inset ring-[#D4AF37]/10 rounded-xl" />
                 </div>
               </div>
             </ScrollReveal>
