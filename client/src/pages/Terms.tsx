@@ -507,7 +507,7 @@ export default function Terms() {
                 </h2>
                 <p className="text-[#999] leading-relaxed">
                   These Terms shall be governed by and construed in accordance with the
-                  laws of the United States and the State of Arizona, without regard to
+                  laws of the United States and the State of Colorado, without regard to
                   its conflict of law provisions. Any disputes arising out of or
                   relating to these Terms or the Services shall be resolved through
                   binding arbitration in accordance with the rules of the American
