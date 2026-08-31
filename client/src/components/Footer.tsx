@@ -5,10 +5,14 @@ export default function Footer() {
     <footer className="border-t border-[#D4AF37]/10 bg-black">
       <div className="h-px bg-gradient-to-r from-transparent via-[#D4AF37]/35 to-transparent" />
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_.8fr_.8fr] lg:gap-16">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_.8fr_.8fr_.8fr] lg:gap-12">
           <div>
             <img src="/brand/allein-logo-horizontal.png" alt="ALLEIN" className="h-auto w-[180px]" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#777]">Nervous-system-informed coaching that helps everyday athletes build strength, movement, confidence, and lifelong capability.</p>
+          </div>
+          <div>
+            <h3 className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">Explore</h3>
+            <div className="mt-4 flex flex-col gap-3"><Link href="/about" className="text-sm text-[#777] transition hover:text-[#D4AF37]">About Michael</Link><Link href="/philosophy" className="text-sm text-[#777] transition hover:text-[#D4AF37]">Philosophy</Link><Link href="/coaching" className="text-sm text-[#777] transition hover:text-[#D4AF37]">Coaching</Link><Link href="/insights" className="text-sm text-[#777] transition hover:text-[#D4AF37]">Insights</Link></div>
           </div>
           <div>
             <h3 className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">Legal</h3>
