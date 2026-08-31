@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
 
 const ABOUT_IMG = "/screenshots/michael_trainer.jpg";
 
@@ -201,6 +202,7 @@ function CapabilitySelfCheck() {
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-black text-white">
+      <Seo title="ALLEIN — Build a Body That Performs for Life" description="Personalized nervous-system-first coaching for everyday athletes who want strength, mobility, balance, coordination, power, and lifelong capability." path="/" />
       <Navbar />
 
       <main id="main-content">
