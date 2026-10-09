@@ -218,3 +218,38 @@
     transition-duration: 0.01ms !important;
   }
 }
+/* Keep the existing Kit form readable and inside narrow mobile layouts. */
+.guide-signup .formkit-form {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+.guide-signup .formkit-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin: 0 !important;
+}
+.guide-signup .formkit-field,
+.guide-signup .formkit-submit {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.guide-signup .formkit-input {
+  min-height: 48px;
+  font-size: 16px !important;
+}
+.guide-signup .formkit-submit {
+  min-height: 48px;
+  color: #000 !important;
+  background: #D4AF37 !important;
+  font-weight: 700 !important;
+}
+.guide-signup input:focus-visible,
+.guide-signup button:focus-visible,
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 4px;
+}

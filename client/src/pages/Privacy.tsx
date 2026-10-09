@@ -38,7 +38,7 @@ const sections = [
     title: "5. When information may be shared",
     content: [
       "We do not sell personal information. We may share limited information with service providers that help operate the website, email, scheduling, payments, or coaching systems; when you direct or consent to the sharing; when reasonably necessary to protect rights, safety, and security; or when required by law.",
-      "Service providers may process information under their own privacy terms. The website is hosted through GitHub Pages. When connected for launch, Kit will support guide delivery and email communications, and Tally will support coaching applications. Links to those services may take you to a form hosted on the provider's website.",
+      "Service providers may process information under their own privacy terms. The website is hosted through GitHub Pages. Kit supports the embedded guide signup forms and email communications, and Tally supports coaching applications. These providers process information when you load or submit their forms. Links may also take you to a form hosted on the provider's website.",
     ],
   },
   {
@@ -80,7 +80,7 @@ export default function Privacy() {
             <ScrollReveal>
               <span className="eyebrow">Legal</span>
               <h1 className="mt-4 font-[var(--font-display)] text-4xl font-bold sm:text-5xl">Privacy Policy</h1>
-              <p className="mt-4 text-sm text-[#777]">Effective and last updated: August 25, 2026</p>
+              <p className="mt-4 text-sm text-[#777]">Effective and last updated: October 9, 2026</p>
               <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#999]">A plain-language description of the information practices for ALLEIN’s coaching website and current inquiry process.</p>
             </ScrollReveal>
           </div>

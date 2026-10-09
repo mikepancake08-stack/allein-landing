@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
+import GuideSignup from "@/components/GuideSignup";
+import ApplicationNote from "@/components/ApplicationNote";
 
 const ABOUT_IMG = "/screenshots/michael_trainer.jpg";
 
@@ -154,7 +156,7 @@ function CapabilitySelfCheck() {
                       onClick={() => chooseAnswer(quality, score)}
                       aria-label={`${quality}: ${score} out of 5`}
                       aria-pressed={answers[quality] === score}
-                      className={`flex h-9 items-center justify-center rounded border text-xs transition ${answers[quality] === score ? "border-[#D4AF37] bg-[#D4AF37] font-bold text-black" : "border-white/10 text-[#777] hover:border-[#D4AF37]/50 hover:text-white"}`}
+                      className={`flex h-11 items-center justify-center rounded border text-xs transition ${answers[quality] === score ? "border-[#D4AF37] bg-[#D4AF37] font-bold text-black" : "border-white/10 text-[#777] hover:border-[#D4AF37]/50 hover:text-white"}`}
                     >
                       {score}
                     </button>
@@ -241,6 +243,7 @@ export default function Home() {
                     Apply for Founding Coaching
                   </a>
                 </div>
+                <ApplicationNote />
                 <p className="mt-4 text-xs uppercase tracking-[0.16em] text-[#666]">Five founding coaching spots · Personalized · Online</p>
               </ScrollReveal>
             </div>
@@ -249,6 +252,53 @@ export default function Home() {
               <div className="relative mx-auto w-full max-w-lg">
                 <div className="absolute inset-0 rounded-full bg-[#D4AF37]/10 blur-[90px]" />
                 <div className="relative overflow-hidden rounded-2xl border border-[#D4AF37]/20 bg-[#080808]/95 p-5 shadow-2xl shadow-black sm:p-7">
+                  <img src={ABOUT_IMG} alt="Michael Morgan, your ALLEIN coach" fetchPriority="high" className="aspect-[4/5] w-full rounded-lg object-cover object-top" />
+                  <div className="pt-5">
+                    <p className="font-[var(--font-display)] text-2xl font-semibold">Meet your coach: Michael Morgan</p>
+                    <p className="mt-2 text-sm leading-relaxed text-[#B8B8B8]">B.S. Exercise Science · Certified Personal Trainer since 2018 · Former NCAA decathlete</p>
+                    <a href="/about" className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#D4AF37]">Get to know Michael <ArrowRight className="h-4 w-4" /></a>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <GuideSignup id="guide-after-hero" />
+
+        <section id="problem" className="relative py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-12 lg:grid-cols-[.82fr_1.18fr] lg:items-start lg:gap-20">
+              <ScrollReveal direction="left">
+                <div className="lg:sticky lg:top-28">
+                  <span className="eyebrow">The gap traditional fitness misses</span>
+                  <h2 className="section-title mt-5">You may still exercise.<span className="block text-gold-gradient">But do you feel capable?</span></h2>
+                </div>
+              </ScrollReveal>
+              <ScrollReveal direction="right" delay={160}>
+                <div className="space-y-8 text-lg leading-relaxed text-[#9B9B9B]">
+                  <p>A workout can make you tired without making you more prepared. You can lift weights or finish cardio sessions and still notice that you feel stiffer, slower, less coordinated, or less confident than you used to.</p>
+                  <p>Real life asks for more than isolated strength. It asks you to react, stabilize, change direction, control your body, recover, and produce force at the right moment.</p>
+                  <div className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/[0.035] px-6 py-5">
+                    <p className="font-[var(--font-display)] text-xl italic text-white sm:text-2xl">“You don’t always need a harder workout. You need a better connection—and a body prepared for life.”</p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        <section id="method" className="border-y border-[#D4AF37]/10 bg-[#050505] py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <div className="mx-auto mb-16 max-w-3xl text-center">
+                <span className="eyebrow">The ALLEIN method</span>
+                <h2 className="section-title mt-5">Train the qualities that make<span className="text-gold-gradient"> life feel possible.</span></h2>
+                <p className="mt-6 text-lg leading-relaxed text-[#888]">Nervous-system-first training is the method. Lifelong physical capability is the outcome.</p>
+              </div>
+            </ScrollReveal>
+            <div className="mx-auto mb-12 max-w-lg rounded-2xl border border-[#D4AF37]/20 bg-black p-6">
+              <p className="mb-3 text-xs text-[#999]">Illustrative profile — not a client result or assessment.</p>
                   <div className="flex items-center justify-between border-b border-white/10 pb-5">
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#D4AF37]">Everyday Athlete Profile</p>
@@ -281,43 +331,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        <section id="problem" className="relative py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-12 lg:grid-cols-[.82fr_1.18fr] lg:items-start lg:gap-20">
-              <ScrollReveal direction="left">
-                <div className="lg:sticky lg:top-28">
-                  <span className="eyebrow">The gap traditional fitness misses</span>
-                  <h2 className="section-title mt-5">You may still exercise.<span className="block text-gold-gradient">But do you feel capable?</span></h2>
-                </div>
-              </ScrollReveal>
-              <ScrollReveal direction="right" delay={160}>
-                <div className="space-y-8 text-lg leading-relaxed text-[#9B9B9B]">
-                  <p>A workout can make you tired without making you more prepared. You can lift weights or finish cardio sessions and still notice that you feel stiffer, slower, less coordinated, or less confident than you used to.</p>
-                  <p>Real life asks for more than isolated strength. It asks you to react, stabilize, change direction, control your body, recover, and produce force at the right moment.</p>
-                  <div className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/[0.035] px-6 py-5">
-                    <p className="font-[var(--font-display)] text-xl italic text-white sm:text-2xl">“You don’t always need a harder workout. You need a better connection—and a body prepared for life.”</p>
-                  </div>
-                </div>
-              </ScrollReveal>
             </div>
-          </div>
-        </section>
-
-        <section id="method" className="border-y border-[#D4AF37]/10 bg-[#050505] py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
-              <div className="mx-auto mb-16 max-w-3xl text-center">
-                <span className="eyebrow">The ALLEIN method</span>
-                <h2 className="section-title mt-5">Train the qualities that make<span className="text-gold-gradient"> life feel possible.</span></h2>
-                <p className="mt-6 text-lg leading-relaxed text-[#888]">Nervous-system-informed training is the method. Lifelong physical capability is the outcome.</p>
-              </div>
-            </ScrollReveal>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {pillars.map((pillar, index) => (
                 <ScrollReveal key={pillar.title} delay={index * 70}>
@@ -355,6 +369,8 @@ export default function Home() {
           </div>
         </section>
 
+        <GuideSignup id="guide-after-self-check" />
+
         <section id="process" className="border-y border-[#D4AF37]/10 bg-[#050505] py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ScrollReveal><div className="max-w-3xl"><span className="eyebrow">How coaching works</span><h2 className="section-title mt-5">Personalized enough to fit your life. Structured enough to create progress.</h2></div></ScrollReveal>
@@ -387,6 +403,8 @@ export default function Home() {
                       <a href={APPLY_URL} className="group inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-black transition hover:-translate-y-0.5">Apply for a Founding Spot<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
                       <p className="text-sm text-[#737373]">$1,200 upfront or 3 payments of $400</p>
                     </div>
+                    <ApplicationNote />
+                    <p className="mt-3 text-sm leading-relaxed text-[#A0A0A0]">Michael reviews your goals before enrollment to determine whether coaching is a fit. Applying does not commit you to a purchase.</p>
                   </div>
                   <div className="border-t border-white/[0.08] bg-black/50 p-7 sm:p-10 lg:border-l lg:border-t-0 lg:p-12">
                     <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">What’s included</p>
@@ -445,7 +463,7 @@ export default function Home() {
               <span className="eyebrow">Your next step</span>
               <h2 className="mt-5 font-[var(--font-display)] text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">Your future body is being built by what you train today.</h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#8D8D8D]">Start by finding out which quality deserves more attention—and take one practical step toward a body you can trust.</p>
-              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row"><PrimaryCta /><a href={APPLY_URL} className="inline-flex items-center justify-center rounded-md border border-white/15 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-[#D4AF37]/50">Ask About Coaching</a></div>
+              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row"><PrimaryCta /><a href={APPLY_URL} className="inline-flex items-center justify-center rounded-md border border-white/15 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-[#D4AF37]/50">Ask About Coaching</a></div><ApplicationNote />
             </ScrollReveal>
           </div>
         </section>
